@@ -1,0 +1,19 @@
+{
+  "name": "the-rental-house",
+  "version": "1.0.0",
+  "description": "api for the rental house app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhaskar4u/the-rental-house.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhaskar4u/the-rental-house/issues"
+  },
+  "homepage": "https://github.com/bhaskar4u/the-rental-house#readme"
+}
