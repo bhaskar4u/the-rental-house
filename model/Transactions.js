@@ -7,6 +7,7 @@ const transactionSchema = new Schema({
     },
     transation_date_time: {
         type: Date,
+        default: Date.now(),
         required: true
     },
     customer_id: {
@@ -24,7 +25,7 @@ const transactionSchema = new Schema({
         required: true
     },
     quantity: {
-        type: String,
+        type: Number,
         required: true
     }
 })

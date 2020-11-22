@@ -2,9 +2,9 @@ const express = require('express');
 const Cors = require('cors');
 const dotenv = require('dotenv');
 const morgan = require('morgan');
-const connectDB = require('./config/db')
 
-const { AddUser } = require('./controller/createUser')
+const API = require('./api')
+const connectDB = require('./config/db')
 dotenv.config({ path: 'config/config.env' })
 connectDB()
 const PORT = process.env.PORT || 3000;
@@ -18,7 +18,7 @@ app.use(Cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-app.post('/reg', AddUser)
+app.use(API)
 
 app.listen(PORT, (err) => {
     if (err) {
